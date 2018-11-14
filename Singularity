@@ -31,6 +31,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         python3 \
         python3-pip \
         python3-setuptools \
+        python3-dev \
         && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -39,9 +40,9 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         apt-get update && \
         apt-get install libnvinfer4=4.1.2-1+cuda9.0
     
+    pip3 install -U setuptools
     pip3 --no-cache-dir install \
         wheel \
-        setuptools \
         Pillow \
         h5py \
         keras_applications \
