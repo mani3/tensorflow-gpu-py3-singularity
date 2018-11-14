@@ -29,6 +29,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         unzip \
         git \
         openssl \
+        ca-certificates \
         python3 \
         python3-pip \
         python3-setuptools \
