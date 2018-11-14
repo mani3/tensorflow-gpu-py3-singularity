@@ -56,6 +56,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         sklearn \
         tqdm \
         argparse \
+        boto3 \
         && \
     pip3 install tensorflow-gpu
 
