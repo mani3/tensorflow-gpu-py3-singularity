@@ -61,4 +61,5 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
     pip3 install tensorflow-gpu
 
 %environment
-    LC_ALL=C
+    export LC_ALL=C
+    export SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt"
