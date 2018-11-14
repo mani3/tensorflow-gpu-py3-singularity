@@ -28,6 +28,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         software-properties-common \
         unzip \
         git \
+        openssl \
         python3 \
         python3-pip \
         python3-setuptools \
@@ -56,3 +57,6 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         argparse \
         && \
     pip3 install tensorflow-gpu
+
+%environment
+    LC_ALL=C
