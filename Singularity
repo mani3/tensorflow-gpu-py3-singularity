@@ -46,7 +46,6 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
     pip3 --no-cache-dir install \
         wheel \
         Pillow \
-        opencv-contrib-python==3.2.0.8 \
         h5py \
         keras_applications \
         keras_preprocessing \
