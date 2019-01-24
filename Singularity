@@ -57,6 +57,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         tqdm \
         argparse \
         boto3 \
+        mtcnn \
         && \
     pip3 install tensorflow-gpu
 
