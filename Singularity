@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: nvidia/cuda:9.0-base-ubuntu16.04
+From: tensorflow/tensorflow:1.13.1-gpu-py3
 
 %post
     apt-get update && apt-get install -y --no-install-recommends \
@@ -8,24 +8,13 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         libssl-dev \
         libbz2-dev \
         libreadline-dev \
-        cuda-command-line-tools-9-0 \
-        cuda-cublas-9-0 \
-        cuda-cufft-9-0 \
-        cuda-curand-9-0 \
-        cuda-cusolver-9-0 \
-        cuda-cusparse-9-0 \
-        curl \
-        libcudnn7=7.2.1.38-1+cuda9.0 \
-        libnccl2=2.2.13-1+cuda9.0 \
         libfreetype6-dev \
         libhdf5-serial-dev \
         libpng12-dev \
         libzmq3-dev \
         pkg-config \
-        python \
-        python-dev \
-        rsync \
         software-properties-common \
+        curl \
         unzip \
         git \
         openssl \
@@ -36,11 +25,6 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         python3-dev \
         && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
-
-    apt-get update && \
-        apt-get install nvinfer-runtime-trt-repo-ubuntu1604-4.0.1-ga-cuda9.0 && \
-        apt-get update && \
-        apt-get install libnvinfer4=4.1.2-1+cuda9.0
     
     pip3 install -U setuptools
     pip3 --no-cache-dir install \
@@ -58,9 +42,7 @@ From: nvidia/cuda:9.0-base-ubuntu16.04
         tqdm \
         argparse \
         boto3 \
-        mtcnn \
-        && \
-    pip3 install tensorflow-gpu
+        mtcnn 
 
 %environment
     export LC_ALL=C.UTF-8
