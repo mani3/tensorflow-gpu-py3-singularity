@@ -11,7 +11,7 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
         && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-    pip3 --no-cache-dir install \
+    /usr/local/bin/pip3 --no-cache-dir install \
         wheel \
         Pillow \
         opencv-contrib-python==3.2.0.8 \
