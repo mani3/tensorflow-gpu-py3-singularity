@@ -3,26 +3,11 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
 
 %post
     apt-get update && apt-get install -y --no-install-recommends \
-        build-essential \
-        zlib1g-dev \
-        libssl-dev \
-        libbz2-dev \
-        libreadline-dev \
-        libfreetype6-dev \
-        libhdf5-serial-dev \
-        libpng12-dev \
-        libzmq3-dev \
-        pkg-config \
-        software-properties-common \
         curl \
         unzip \
         git \
         openssl \
         ca-certificates \
-        python3 \
-        python3-pip \
-        python3-setuptools \
-        python3-dev \
         && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
     
