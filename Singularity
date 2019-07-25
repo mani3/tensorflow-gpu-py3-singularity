@@ -8,6 +8,7 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
         git \
         openssl \
         ca-certificates \
+        protobuf-compiler \
         && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -26,7 +27,12 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
         tqdm \
         argparse \
         boto3 \
-        mtcnn 
+        mtcnn \
+        Cython \
+        contextlib2 \
+        lxml \
+        jupyter
+
 
 %environment
     export LC_ALL=C.UTF-8
