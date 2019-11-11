@@ -31,6 +31,7 @@ From: tensorflow/tensorflow:2.0.0-gpu-py3
         easydict \
         kaggle \
         seaborn \
+        tensorflow-addons \
         jupyter
 
 
