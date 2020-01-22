@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:2.0.0-gpu-py3
+From: tensorflow/tensorflow:2.1.0-gpu-py3
 
 %post
     apt-get update && apt-get install -y --no-install-recommends \
@@ -33,6 +33,8 @@ From: tensorflow/tensorflow:2.0.0-gpu-py3
         seaborn \
         tensorflow-addons \
         tensorflow-datasets \
+        pyarrow \
+        imgaug \
         jupyter
 
 
