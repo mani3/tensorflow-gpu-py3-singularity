@@ -35,6 +35,8 @@ From: tensorflow/tensorflow:2.1.0-gpu-py3
         tensorflow-datasets \
         pyarrow \
         imgaug \
+        gspread \
+        oauth2client \
         jupyter
 
 
