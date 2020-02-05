@@ -37,6 +37,7 @@ From: tensorflow/tensorflow:2.1.0-gpu-py3
         imgaug \
         gspread \
         oauth2client \
+        mlflow \
         jupyter
 
 
