@@ -17,7 +17,7 @@ From: tensorflow/tensorflow:1.15.2-gpu-py3
         Pillow \
         opencv-python \
         matplotlib \
-        numpy \
+        numpy==1.17 \
         pandas \
         scipy \
         sklearn \
